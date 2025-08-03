@@ -1,0 +1,105 @@
+body {background-color: #400B0B;}
+
+h1 {color:#ffffff;}
+h3 {color: rgb(255, 255, 255);}
+h4 {color: #ffffff;}
+a {color: rgb(255, 255, 255);}
+p {color: rgb(255, 255, 255);}
+
+.Centro {display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;}
+
+
+.Centroimg{display: grid;
+align-items: center;
+justify-content: center;
+}
+  
+
+.Esquerda {
+      float: left;
+      margin-right: 10px; /* Espaço entre a imagem e o texto */
+    }
+    
+    .Direita {
+      float: right;
+      margin-left: 10px ; /* Espaço entre a imagem e o texto */
+    }
+
+
+
+    .Conter_as_duas_img {
+        display: flex;
+        justify-content: center; /* centraliza horizontalmente */
+        align-items: flex-start; /* alinha pelo topo */
+        gap: 50px; /* espaço entre as imagens */
+      }
+      
+      .container-imagens div {
+        text-align: center; /* centraliza o conteúdo dentro de cada bloco */
+      }
+      
+
+
+      .Conter_as_img {
+        display: flex;
+        justify-content: center; /* centraliza horizontalmente */
+        align-items: flex-end; /* alinha pelo 'pé' da pg */
+        gap: 50px; /* espaço entre as imagens */
+      }
+      
+      .container-imagens div {
+        text-align: center; /* centraliza o conteúdo dentro de cada bloco */
+      }
+      
+
+      .Conter_as_img_Esquerda {
+        display: flex;
+        justify-content: center; /* centraliza horizontalmente */
+        align-items: flex-start; /* alinha pelo topo */
+        gap: 50px; /* espaço entre as imagens */
+        float: left;
+      }
+      
+      .container-imagens div {
+        text-align: center; /* centraliza o conteúdo dentro de cada bloco */
+      }
+
+
+
+      .carrossel {
+        width: 800px;
+        height: 400px;
+        overflow: hidden;
+        margin: 0 auto;
+        border: 3px solid white;
+      }
+      
+      .slides {
+        display: flex;
+        width: 2400px; /* 3 imagens de 800px */
+        animation: deslizar 9s infinite;
+      }
+      
+      .slides img {
+        width: 800px;
+        height: 400px;
+      }
+      
+      @keyframes deslizar {
+        0%   { transform: translateX(0); }
+        33%  { transform: translateX(-800px); }
+        66%  { transform: translateX(-1600px); }
+        100% { transform: translateX(0); }
+      }
+
+
+
+
+
+
+
+      
+      

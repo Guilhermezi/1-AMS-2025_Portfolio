@@ -1,0 +1,62 @@
+body {background: linear-gradient(to right, #400B0B , #000000); }
+
+h1 {color:#ffffff;}
+h3 {color: rgb(255, 255, 255);}
+
+a {color: rgb(255, 255, 255);}
+p {color: rgb(255, 255, 255);}
+
+.Centro {display: grid;
+    text-align: center;
+    justify-content: center;}
+
+
+    .Direita {
+      float: right;
+      margin-left: 10px ; /* Espaço entre a imagem e o texto */
+    }
+
+
+    .Rodapé {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px;
+      z-index: 1000;  
+      text-align: center;
+  }
+  
+  .Rodapé img {
+      height: 290px; /* ou o tamanho que quiser */
+      width: auto;
+  }
+  
+  p{
+    background-color: blue;
+    color: white;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+  
+
+
+
+    .Conter_as_duas_img {
+        display: flex;
+        justify-content: center; /* centraliza horizontalmente */
+        align-items: flex-start; /* alinha pelo topo */
+        gap: 50px; /* espaço entre as imagens */
+      }
+      
+      .container-imagens div {
+        text-align: center; /* centraliza o conteúdo dentro de cada bloco */
+      }
+      
