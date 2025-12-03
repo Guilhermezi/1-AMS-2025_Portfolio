@@ -1,0 +1,195 @@
+body { background-color: #f9f9fb;}
+
+h1 {
+  text-align: center; /* centraliza o título */
+  font-family: Arial, Helvetica, sans-serif; /* define a fonte do título */
+  font-size: 36px; /* tamanho da fonte do título */
+  color: 	#B22222;
+}
+
+.centro {
+  text-align: center;  /* centraliza o texto */
+  margin: 20px; /* margem ao redor do texto */
+  align-items: center; /* alinha os itens no centro */
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1A1A1A;
+}
+
+ul {
+  list-style-type: none; /* remove os marcadores da lista */
+  margin: 0; /* remove a margem */
+  padding: 8px; /* adiciona um pouco de espaçamento interno */
+  overflow: hidden; /* remove o overflow */
+}
+
+li {
+  float: right; /* alinha os itens à direita */
+}
+
+li a {
+  display: block; /* faz o link ocupar todo o espaço do item */
+  color: #1A1A1A; /* cor do texto do link */
+  text-align: center; /* centraliza o texto do link */
+  padding: 8px 10px;  /* espaçamento interno do link */
+  text-decoration: none; /* remove o sublinhado do link */
+}
+
+li a:hover {
+  color: white; /* cor do texto ao passar o mouse */
+  background-color: 	#B22222; /* cor de fundo ao passar o mouse */
+  transition: background-color 0.3s ease; /* transição suave para a cor*/
+  border-radius: 25px; /* bordas arredondadas */
+  padding: 8px 10px; /* mantém o espaçamento interno ao passar o mouse */
+}
+
+.container {
+  display: flex; /* usa flexbox para organizar os elementos */
+  flex-direction: column; /* organiza os elementos em coluna */
+  align-items: center; /* centraliza os elementos horizontalmente */
+  justify-content: center; /* centraliza os elementos verticalmente */
+  max-width: 1150px; /* largura máxima do container */
+  margin: 30px auto; /* centraliza o container na página */
+}
+
+.centro {
+  text-align: center;  /* centraliza o texto */
+  margin: 20px; /* margem ao redor do texto */
+  align-items: center; /* alinha os itens no centro */
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.carrossel {
+  display: flex;               /* deixa os cards lado a lado */
+  overflow-x: auto;           /* ativa o scroll horizontal */
+  gap: 16px;                  /* espaço entre os cards */
+  padding: 16px;
+  scroll-behavior: smooth;    /* scroll suave ao navegar */
+}
+
+.card {
+  flex: 0 0 250px;            /* largura fixa do card */
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* sombra suave */
+  padding: 12px;
+  text-align: center;
+}
+
+.card img {
+  width: 170.7px;
+  height: 256px;
+  object-fit: cover; /* mantém a proporção da imagem */
+  border-radius: 6px;
+}
+
+.card h3 {
+  margin: 12px 0 8px;
+  font-size: 1.2em;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #1A1A1A;
+}
+
+footer {
+
+  background-color: #400B0B; /* cor de fundo do rodapé */
+  font-family: Arial, Helvetica, sans-serif; /* fonte do rodapé */
+  padding: 20px; /* espaçamento interno do rodapé */
+  
+  /* width: 110%; largura total do rodapé */
+}
+
+footer a {
+  color: #ECF0F1; /* cor do link no rodapé */
+  text-decoration: none; /* remove o sublinhado do link */
+  margin-right: 25px; /* margem direita automática */
+  font-weight: bold; /* deixa o link em negrito */
+}
+
+footer a:hover {
+  color: #FC6419; /* cor do link ao passar o mouse */
+  text-decoration: underline; /* sublinha o link ao passar o mouse */
+}
+
+footer p {
+   color: #FC6419; /* cor do texto do rodapé */
+   font-family: Arial, Helvetica, sans-serif; /* fonte do texto do rodapé */
+}
+
+
+footer image {
+  display: flex; /* usa flexbox para alinhar a imagem mas não tá funcionando*/
+  margin-right: 10px; /* margem direita da imagem */
+  text-align: right; /* alinha a imagem à direita */
+}
+
+table {
+  width: 70vw; /* largura total da tabela */
+  border-collapse: collapse; /* remove o espaçamento entre as células */
+  text-align: center; /* centraliza o texto da tabela */
+  margin: 20px auto; /* centraliza a tabela na página */
+}
+
+thead, tfoot {
+  background-color: #400B0B; /* cor de fundo do cabeçalho e rodapé da tabela */
+  color: #ECF0F1; /* cor do texto do cabeçalho e rodapé da tabela */
+}
+
+tbody {
+  background-color: #F5F5F5; /* cor de fundo do corpo da tabela */
+  color: #1A1A1A; /* cor do texto do corpo da tabela */
+  line-height: 1.6; /* altura da linha do texto */
+  padding-left: 20px; /* espaçamento interno à esquerda */
+}
+ th, td {
+  border: 1px solid #000; /* borda das células */
+  padding: 8px; /* espaçamento interno das células */
+  text-align: left; /* alinha o texto à esquerda */
+  font-family: Arial, Helvetica, sans-serif; /* fonte do texto da tabela */
+}
+
+.especial {
+  background-color: #400B0B; /* cor de fundo especial */
+  color: #FFFFFF; /* cor do texto especial */
+  font-weight: bold; /* texto em negrito */
+}
+
+form {
+  display: flex; /* usa flexbox para organizar os elementos do formulário */
+  flex-direction: column; /* organiza os elementos em coluna */
+  max-width: 600px; /* largura máxima do formulário */
+  margin: 20px auto; /* centraliza o formulário na página */
+  padding: 20px; /* espaçamento interno do formulário */
+  background-color: #fff; /* cor de fundo do formulário */
+  border-radius: 8px; /* bordas arredondadas do formulário */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* sombra suave do formulário */
+}
+
+
+textarea {
+  height: 100px; /* altura da área de texto */
+  padding: 10px; /* espaçamento interno da área de texto */
+  border-radius: 8px; /* bordas arredondadas da área de texto */
+  border: 1px solid #ccc; /* borda da área de texto */
+  font-family: Arial, Helvetica, sans-serif; /* fonte da área de texto */
+  resize: vertical; /* permite redimensionar a altura da área de texto */
+}
+
+input[type="email"]{
+  padding: 10px; /* espaçamento interno do campo de email */
+  border-radius: 8px; /* bordas arredondadas do campo de email */
+  border: 1px solid #ccc; /* borda do campo de email */
+  font-family: Arial, Helvetica, sans-serif; /* fonte do campo de email */
+  width: 100%; /* largura total do campo de email */
+  box-sizing: border-box; /* inclui o padding e a borda na largura total */
+}
+

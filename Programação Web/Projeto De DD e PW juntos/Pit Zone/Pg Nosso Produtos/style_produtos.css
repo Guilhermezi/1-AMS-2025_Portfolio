@@ -1,0 +1,360 @@
+/* Reset e estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1a0505 0%, #400B0B 30%, #000000 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container principal */
+.Conter_as_duas_img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: start;
+}
+
+/* Cartões de produtos */
+.Conter_as_duas_img > div {
+    background: rgba(26, 5, 5, 0.85);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    border: 2px solid rgba(255, 46, 46, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 400px;
+}
+
+/* Imagens dos cartões */
+.Conter_as_duas_img img {
+    height: 200px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Títulos dos cartões */
+.Conter_as_duas_img > div::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ff2e2e, transparent);
+    margin-bottom: 20px;
+}
+
+/* Links dos cartões */
+.Conter_as_duas_img a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #400B0B, #2a0808);
+    border-radius: 30px;
+    border: 2px solid rgba(255, 46, 46, 0.4);
+    display: inline-block;
+    margin-top: auto;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    width: fit-content;
+}
+
+.Conter_as_duas_img a:hover {
+    background: linear-gradient(45deg, #5a1010, #400B0B);
+    border-color: #ff2e2e;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 46, 46, 0.4);
+}
+
+/* Container de publicidade */
+.Conter_as_duas_img > div:nth-child(4) {
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    min-height: 850px;
+    padding: 25px;
+}
+
+/* Blocos de publicidade individuais */
+.publicidade-bloco {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid rgba(255, 46, 46, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Títulos de publicidade */
+.publicidade-bloco h4 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background: linear-gradient(45deg, #ff2e2e, #ff6b6b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.publicidade-bloco h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background: #ff2e2e;
+}
+
+/* Imagens de publicidade */
+.publicidade-bloco a img {
+    height: 60px;
+    width: auto;
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.publicidade-bloco a:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Cartão de Visitas - AGORA LOGO ABAIXO DOS CARDS */
+.cartao-visitas {
+    max-width: 600px;
+    width: 100%;
+    margin: 40px auto 30px;
+    padding: 30px;
+    text-align: center;
+    background: rgba(26, 5, 5, 0.95);
+    border-radius: 25px;
+    border: 3px solid rgba(255, 46, 46, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cartao-visitas::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #ff2e2e, #ff6b6b, #ff2e2e);
+}
+
+.cartao-visitas img {
+    height: 220px;
+    width: auto;
+    filter: drop-shadow(0 8px 20px rgba(255, 0, 0, 0.4));
+    margin-bottom: 0;
+}
+
+/* Adicionar um título acima do cartão de visitas */
+.cartao-visitas-titulo {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    background: linear-gradient(45deg, #ff2e2e, #ff6b6b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.cartao-visitas-titulo::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ff2e2e, transparent);
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .Conter_as_duas_img {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .Conter_as_duas_img > div:nth-child(4) {
+        grid-column: span 2;
+        grid-row: auto;
+        min-height: 400px;
+        flex-direction: row;
+    }
+    
+    .publicidade-bloco {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    
+    .cartao-visitas {
+        max-width: 500px;
+        margin: 50px auto 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Conter_as_duas_img {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+    
+    .Conter_as_duas_img > div:nth-child(4) {
+        grid-column: span 1;
+        flex-direction: column;
+    }
+    
+    .Conter_as_duas_img > div {
+        min-height: 380px;
+    }
+    
+    .Conter_as_duas_img img {
+        height: 180px;
+    }
+    
+    .cartao-visitas {
+        max-width: 400px;
+        margin: 40px auto;
+        padding: 25px;
+    }
+    
+    .cartao-visitas img {
+        height: 180px;
+    }
+    
+    .cartao-visitas-titulo {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px 10px;
+    }
+    
+    .Conter_as_duas_img {
+        padding: 0 10px;
+        gap: 20px;
+    }
+    
+    .Conter_as_duas_img > div {
+        padding: 20px;
+        min-height: 350px;
+    }
+    
+    .Conter_as_duas_img img {
+        height: 150px;
+    }
+    
+    .Conter_as_duas_img a {
+        padding: 10px 25px;
+        font-size: 0.85rem;
+    }
+    
+    .publicidade-bloco h4 {
+        font-size: 1.1rem;
+    }
+    
+    .publicidade-bloco a img {
+        height: 50px;
+    }
+    
+    .cartao-visitas {
+        padding: 20px;
+        max-width: 320px;
+        margin: 30px auto;
+    }
+    
+    .cartao-visitas img {
+        height: 160px;
+    }
+    
+    .cartao-visitas-titulo {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Conter_as_duas_img > div,
+.cartao-visitas {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.Conter_as_duas_img > div:nth-child(1) { animation-delay: 0.1s; }
+.Conter_as_duas_img > div:nth-child(2) { animation-delay: 0.2s; }
+.Conter_as_duas_img > div:nth-child(3) { animation-delay: 0.3s; }
+.Conter_as_duas_img > div:nth-child(4) { animation-delay: 0.4s; }
+.cartao-visitas { animation-delay: 0.5s; }
+
+/* Efeito de foco nos cartões */
+.Conter_as_duas_img > div:hover {
+    transform: translateY(-5px);
+    border-color: #ff2e2e;
+    box-shadow: 0 15px 35px rgba(255, 46, 46, 0.2);
+}
